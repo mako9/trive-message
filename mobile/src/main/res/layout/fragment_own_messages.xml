@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_all_geofences_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/strasse1">
+
+    <LinearLayout
+        android:id="@+id/fragment_all_geofences_emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.EmptyState"
+            android:text="@string/Label.EmptyState2"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_all_geofences_geofenceRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/Margin.FABPadding"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout android:id="@+id/bottom_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ColorPrimary"
+        style="@android:style/Holo.ButtonBar">
+
+        <Button android:id="@+id/All_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/TextColor.White"
+            android:background="@color/ColorPrimary"
+            android:text="@string/Label.AllMsg" />
+
+        <Button android:id="@+id/Own_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/Orange"
+            android:background="@color/ColorPrimary"
+            android:text="@string/Label.OwnMsg"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

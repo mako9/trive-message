@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="ColorPrimary">#4d4d4d</color>
+  <color name="ColorPrimaryDark">#000000</color>
+  <color name="ColorAccent">#CCCCCC</color>
+  <color name="Orange">#ff6600</color>
+
+  <color name="Background">#bababa</color>
+
+  <color name="Background.CardView">#DDDDDD</color>
+  <color name="Background.AddView">#dddddd</color>
+
+  <color name="TextColor.White">#FFFFFF</color>
+  <color name="TextColor.Gray">#999999</color>
+  <color name="TextColor.DarkGray">#333333</color>
+  <color name="TextColor.Black">#000000</color>
+
+  <color name="Divider">#333333</color>
+
+
+  <color name="primary">#E43F3F</color>
+  <color name="primary_dark">#E12929</color>
+  <color name="primary_darker">#CC1D1D</color>
+  <color name="accent">#FFFFFF</color>
+
+  <color name="black">#000000</color>
+  <color name="jet">#222222</color>
+  <color name="oil">#333333</color>
+  <color name="monsoon">#777777</color>
+  <color name="jumbo">#888888</color>
+  <color name="aluminum">#999999</color>
+  <color name="base">#AAAAAA</color>
+  <color name="iron">#CCCCCC</color>
+  <color name="white">#FFFFFF</color>
+
+</resources>

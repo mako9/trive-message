@@ -1,0 +1,85 @@
+<resources>
+  <string name="app_name">trive.message</string>
+  <string name="app_title">trive.message</string>
+
+  <string name="action_delete_all">Delete All Messages</string>
+  <string name="logout">Logout</string>
+  <string name="refresh">Refresh</string>
+  <string name="own_messages">Own messages</string>
+  <string name="all_geofences">All messages</string>
+
+  <!-- Dialogs -->
+  <string name="AreYouSure">Are you sure?</string>
+  <string name="Yes">Yes</string>
+  <string name="No">No</string>
+  <string name="Add">Send</string>
+  <string name="Cancel">Cancel</string>
+  <string name="Speak">Speak</string>
+
+  <!-- Button -->
+  <string name="Button.DeleteGeofence">DELETE</string>
+  <string name="Button.MapGeofence">MAP</string>
+  <string name="Button.Login">Login</string>
+  <string name="Button.Create">Create Account</string>
+
+  <!-- Labels -->
+  <string name="Label.Name">Name</string>
+  <string name="Label.Text">Text:</string>
+  <string name="Label.Latitude">Latitude</string>
+  <string name="Label.Longitude">Longitude</string>
+  <string name="Label.Radius">Radius</string>
+  <string name="Label.Address">Address:</string>
+  <string name="Label.AddGeofence">Send a Message</string>
+  <string name="Label.EmptyState">No Messages in your area</string>
+  <string name="Label.EmptyState2">You have sent no messages</string>
+  <string name="Label.CreateAccount">No account yet? Create one</string>
+  <string name="Label.AlreadyAccount">Already a member? Login</string>
+  <string name="Label.AllMsg">ALL</string>
+  <string name="Label.OwnMsg">OWN</string>
+
+  <!-- Hints -->
+  <string name="Hint.Name">Name for the message</string>
+  <string name="Hint.Text" formatted="false">Type your Message Text...</string>
+  <string name="Hint.Longitude" formatted="false">Longitude (%4.1f\u00B0 to %4.1f\u00B0) </string>
+  <string name="Hint.Latitude" formatted="false">Latitude (%4.1f\u00B0 to %4.1f\u00B0) </string>
+  <string name="Hint.Radius" formatted="false">Radius (%3.2f to %3.1f km)</string>
+  <string name="Hint.Email">Email</string>
+  <string name="Hint.Password">Password</string>
+
+  <!-- Units -->
+  <string name="Units.Degrees">\u00B0</string>
+  <string name="Units.Kilometers">km</string>
+
+  <!-- Notification -->
+  <string name="Notification.Title">Alert</string>
+  <string name="Notification.Text">Attention: %1$s!</string>
+
+  <!-- Toast -->
+  <string name="Toast.Validation">Please enter valid message text</string>
+  <string name="Toast.Error">There was an error. Please try again.</string>
+
+  <!-- Errors -->
+  <string name="Error.Connection">Please give us all necessary permissions!</string>
+  <string name="GPSAlertDialogTitle">Error: Enable GPS</string>
+  <string name="GPSAlertDialogMessage">Enable GPS</string>
+  <string name="action_settings">Settings</string>
+
+  <!-- Category -->
+
+  <string name="category_prompt">Choose a category</string>
+  <string name="spinner_title">Choose a category</string>
+  <string name="Category">Category</string>
+  <string name="Timestamp">Timestamp</string>
+
+  <string-array name="category_arrays">
+    <item>Accident</item>
+    <item>Information</item>
+    <item>Traffic jam</item>
+    <item>Road works</item>
+  </string-array>
+
+  <!-- Maps -->
+
+    <string name="title_activity_maps">Map</string>
+
+</resources>

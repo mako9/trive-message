@@ -1,0 +1,134 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/Margin.Half"
+    android:layout_marginStart="@dimen/Margin.Half"
+    android:layout_marginEnd="@dimen/Margin.Half"
+    card_view:cardBackgroundColor="@color/Background.CardView"
+    card_view:cardCornerRadius="6dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/listitem_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="@dimen/Margin.Standard"
+        android:layout_alignParentLeft="true"
+        style="@style/TextView.Header"
+        tools:text="@string/Category"/>
+
+    <TextView
+        android:id="@+id/listitem_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="@dimen/Margin.Standard"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/listitem_category"
+        android:textAlignment="viewEnd"
+        tools:text="@string/Timestamp"
+        style="@style/TextView.Small"
+        android:layout_gravity="right" />
+
+  </RelativeLayout>
+
+    <View style="@style/Divider.Horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Margin.Standard"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Small"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/listitem_geofenceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            style="@style/TextView"
+            android:text="@string/Label.Text"
+            android:textSize="24sp"/>
+
+      </LinearLayout>
+
+      <!--<View style="@style/Divider.Horizontal"/>-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/Width.Label"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            style="@style/TextView.Small"
+            android:text="@string/Label.Address"/>
+
+        <TextView
+            android:id="@+id/listitem_geofenceAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Small"
+            android:text="@string/Label.Address"/>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Divider.Horizontal"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/listitem_deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.Button"
+        android:background="@android:color/transparent"
+        android:text="@string/Button.DeleteGeofence"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/listitem_MapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listitem_deleteButton"
+        style="@style/AppTheme.Button"
+        android:background="@android:color/transparent"
+        android:text="@string/Button.MapGeofence"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+  </RelativeLayout>
+
+  </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_all_geofences_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/strasse1">
+
+  <LinearLayout
+      android:id="@+id/fragment_all_geofences_emptyState"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView.EmptyState"
+        android:text="@string/Label.EmptyState"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/fragment_all_geofences_geofenceRecyclerView"
+      android:layout_width="500dp"
+      android:layout_height="500dp"
+      android:paddingBottom="@dimen/Margin.FABPadding"
+      android:clipToPadding="false"
+      android:overScrollMode="never"
+      android:scrollbars="vertical" />
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fragment_all_geofences_actionButton"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="bottom|end"
+      android:layout_marginRight="@dimen/fab_margin"
+      android:layout_marginBottom="@dimen/fab_margin"
+      android:layout_above="@+id/bottom_toolbar"
+      android:src="@drawable/fab_plus_icon"
+      android:layout_alignParentEnd="true"
+      app:backgroundTint="@color/Orange"
+      app:rippleColor="@color/ColorAccent"
+      android:scaleType="center"
+      app:fabSize="mini"
+      app:borderWidth="0dp"
+      app:elevation="12dp"
+      app:pressedTranslationZ="12dp"
+      />
+
+  <LinearLayout android:id="@+id/bottom_toolbar"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:background="@color/ColorPrimary"
+      style="@android:style/Holo.ButtonBar">
+
+    <Button android:id="@+id/All_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/Orange"
+        android:background="@color/ColorPrimary"
+        android:text="@string/Label.AllMsg" />
+
+    <Button android:id="@+id/Own_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/TextColor.White"
+        android:background="@color/ColorPrimary"
+        android:text="@string/Label.OwnMsg"
+        />
+  </LinearLayout>
+
+</RelativeLayout>
+
